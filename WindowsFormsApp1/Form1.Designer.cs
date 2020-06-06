@@ -33,15 +33,15 @@
             this.fromDate = new System.Windows.Forms.DateTimePicker();
             this.ToDate = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(221, 123);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(166, 100);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Show Data";
             this.button1.UseVisualStyleBackColor = true;
@@ -50,52 +50,51 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 170);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 138);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(965, 361);
+            this.dataGridView1.Size = new System.Drawing.Size(724, 293);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // fromDate
             // 
-            this.fromDate.Location = new System.Drawing.Point(113, 52);
-            this.fromDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fromDate.Location = new System.Drawing.Point(85, 42);
             this.fromDate.Name = "fromDate";
-            this.fromDate.Size = new System.Drawing.Size(265, 22);
+            this.fromDate.Size = new System.Drawing.Size(200, 20);
             this.fromDate.TabIndex = 2;
             // 
             // ToDate
             // 
-            this.ToDate.Location = new System.Drawing.Point(644, 52);
-            this.ToDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ToDate.Location = new System.Drawing.Point(483, 42);
             this.ToDate.Name = "ToDate";
-            this.ToDate.Size = new System.Drawing.Size(265, 22);
+            this.ToDate.Size = new System.Drawing.Size(200, 20);
             this.ToDate.TabIndex = 3;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(576, 123);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(432, 100);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 28);
+            this.button2.Size = new System.Drawing.Size(128, 23);
             this.button2.TabIndex = 4;
             this.button2.Text = "Export To Excel";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ToDate);
             this.Controls.Add(this.fromDate);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -110,6 +109,7 @@
         private System.Windows.Forms.DateTimePicker fromDate;
         private System.Windows.Forms.DateTimePicker ToDate;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
